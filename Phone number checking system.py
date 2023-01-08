@@ -58,5 +58,5 @@ if first_four_digits in telenor:
 # Checking if first four elements were in jazz list, if yes then printing the service provider.
 if first_four_digits in jazz:
     print("The service provider is jazz.")
-# A condition if there is not a single match then the number is false or the number belongs to a forigen state.
+
 
