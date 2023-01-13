@@ -1,0 +1,18 @@
+#Taking input from user.
+age = input("What is your current age: ")
+
+#Converting age into int form also known as type casting.
+age_as_int = int(age)
+
+#Calculating the remaining years, days, weeks, months.
+remaining_years = 90 - age_as_int
+days_remaining = remaining_years * 365
+weeks_remaining = remaining_years * 52
+months_remaining = remaining_years * 12
+
+#Printing our all outputs.
+print("Your remaining years are: ",remaining_years)
+print("Your remaining day's are: ",days_remaining)
+print("Your remaining weeks are: ",weeks_remaining)
+print("your remaining months are: ",months_remaining)
+
