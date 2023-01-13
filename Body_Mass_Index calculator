@@ -1,0 +1,5 @@
+print("Welcome to my Body mass index Calulator.")
+weight = float(input("Please enter your weight in(KG): "))
+height = float(input("Plese enter your hight in(cm): "))
+Body_mass_index = weight/(height ** 2)
+print("your Body mass is: ", Body_mass_index)
