@@ -1,0 +1,37 @@
+import random
+
+words = ["imran","fahad","faizan"]
+word = random.choice(words)
+guessed_letters = []
+incorrect_guesses = 0
+correct_guesses = 0
+display_word = "_" * len(word)
+game_running = True
+
+# Main game loop
+while game_running:
+    print("This game is coded and developed by Muhammad Fahad.")
+    guess = input("Guess a letter: ").lower()
+    if guess in guessed_letters:
+        print("You already guessed that letter. Try again.")
+    else:
+        guessed_letters.append(guess)
+
+        if guess in word:
+            for i in range(len(word)):
+                if word[i] == guess:
+                    display_word = display_word[:i] + guess + display_word[i + 1:]
+            correct_guesses += 1
+            print("Correct! The word is now: " + display_word)
+        else:
+            incorrect_guesses += 1
+            print("Incorrect. You have " + str(incorrect_guesses) + " incorrect guesses.")
+
+    # Check if the user has won
+    if "_" not in display_word:
+        game_running = False
+        print("Congratulations, you won! The word was " + word + ".")
+    # Check if the user has lost
+    elif incorrect_guesses == 6:
+        game_running = False
+        print("Sorry, you lost. The word was " + word + ".")
