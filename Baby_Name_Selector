@@ -1,0 +1,52 @@
+import random
+
+
+baby_boy = ["Aaliyah", "Adam", "Aisha", "Ali", "Amani", "Amir", "Amina", "Amirah", "Aydin", "Aziza",
+                     "Bilal", "Fatima", "Husayn", "Ibrahim", "Iman", "Ismael", "Jasmine", "Karim", "Khalid", "Layan",
+                     "Leila", "Mahir", "Malik", "Mariam", "Munir", "Musa", "Nabil", "Nura", "Rashid", "Raza",
+                     "Salman", "Samir", "Sana", "Sarah", "Shahid", "Shakir", "Tariq", "Tasnim", "Umar", "Usman",
+                     "Walid", "Yasir", "Yasmin", "Yusuf", "Zahra", "Zainab", "Zaki", "Zara", "Zayn", "Zubair",
+                     "Abdul", "Abdullah", "Ahmed", "Akbar", "Amin", "Asim", "Atif", "Azeem", "Bashir", "Dawud",
+                     "Fahad", "Faisal", "Ghalib", "Hakim", "Hamid", "Hassan", "Imran", "Jabbar", "Kamal", "Karim",
+                     "Khalil", "Mansur", "Mashood", "Mubarak", "Nashit", "Nasir", "Nawaz", "Nazir", "Qasim", "Rafiq",
+                     "Rashad", "Sabir", "Sahir", "Salim", "Sameer", "Shah", "Shahzad", "Shakib", "Tariq", "Taslim",
+                     "Waseem", "Yaser", "Yunus", "Zafar", "Zahir", "Zaid", "Zaki", "Zeeshan", "Zulfiqar"]
+
+baby_girl = ["Aaliyah", "Aisha", "Amina", "Amirah", "Aziza", "Fatima", "Hana", "Iman", "Jasmine", "Leila",
+                      "Lila", "Mariyah", "Maryam", "Nura", "Rania", "Reem", "Sahar", "Salma", "Sana", "Sarah",
+                      "Shaima", "Tasnim", "Yasmin", "Zahra", "Zainab", "Zara", "Aisha", "Areej", "Arwa", "Aisha",
+                      "Dalal", "Dalila", "Fariha", "Fathima", "Gazala", "Hafsa", "Hajar", "Halima", "Ibtihaj",
+                      "Iffat", "Ilham", "Inaya", "Iqra", "Jawaher", "Jumana", "Kaltham", "Kausar", "Khadijah",
+                      "Lamia", "Lubna", "Maha", "Mahira", "Mariam", "Mashael", "Maysa", "Mehwish", "Muna",
+                      "Nabila", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit",
+                      "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa",
+                      "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit",
+                      "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa",
+                      "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit"]
+
+print("Welcome to baby name selector. \n Created by Muhammad Fahad.")
+gender = input("Type 'b' for Boy and 'g' for girl: ")
+
+while True:
+    bname = random.choice(baby_boy)
+    gname = random.choice(baby_girl)
+
+    if gender.lower() == "b":
+        print("The best name for a boy would be: ", bname)
+    elif gender.lower() == "g":
+        print("The best name for a girl would be: ", gname)
+    else:
+        print("Please Enter a Valid Option.")
+    break
+
+
+input("Press Enter to EXIT.")
+
+
+
+
+
+
+
+
+
