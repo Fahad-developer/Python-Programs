@@ -1,6 +1,7 @@
+#Importing random module to select random name from the lists.
 import random
 
-
+#Creating a list of baby boy name consist atleast 100 names.
 baby_boy = ["Aaliyah", "Adam", "Aisha", "Ali", "Amani", "Amir", "Amina", "Amirah", "Aydin", "Aziza",
                      "Bilal", "Fatima", "Husayn", "Ibrahim", "Iman", "Ismael", "Jasmine", "Karim", "Khalid", "Layan",
                      "Leila", "Mahir", "Malik", "Mariam", "Munir", "Musa", "Nabil", "Nura", "Rashid", "Raza",
@@ -12,6 +13,7 @@ baby_boy = ["Aaliyah", "Adam", "Aisha", "Ali", "Amani", "Amir", "Amina", "Amirah
                      "Rashad", "Sabir", "Sahir", "Salim", "Sameer", "Shah", "Shahzad", "Shakib", "Tariq", "Taslim",
                      "Waseem", "Yaser", "Yunus", "Zafar", "Zahir", "Zaid", "Zaki", "Zeeshan", "Zulfiqar"]
 
+#Creating a list of baby girl name consist of atleast 100 names.
 baby_girl = ["Aaliyah", "Aisha", "Amina", "Amirah", "Aziza", "Fatima", "Hana", "Iman", "Jasmine", "Leila",
                       "Lila", "Mariyah", "Maryam", "Nura", "Rania", "Reem", "Sahar", "Salma", "Sana", "Sarah",
                       "Shaima", "Tasnim", "Yasmin", "Zahra", "Zainab", "Zara", "Aisha", "Areej", "Arwa", "Aisha",
@@ -24,22 +26,33 @@ baby_girl = ["Aaliyah", "Aisha", "Amina", "Amirah", "Aziza", "Fatima", "Hana", "
                       "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa",
                       "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit", "Nashwa", "Nashit"]
 
+#Printing a message to the user.
 print("Welcome to baby name selector. \n Created by Muhammad Fahad.")
+
+#Taking input from the user to know the gender of the baby
 gender = input("Type 'b' for Boy and 'g' for girl: ")
 
+#While loop
 while True:
+
+    #Creating new variable to store randomly selected baby names.
     bname = random.choice(baby_boy)
     gname = random.choice(baby_girl)
 
+    #Checking if the gender selected by the user is a boy.
     if gender.lower() == "b":
         print("The best name for a boy would be: ", bname)
+    
+    #Checking if the gender selected by the user is a girl.
     elif gender.lower() == "g":
         print("The best name for a girl would be: ", gname)
+     
+    #If gender didnt matach possible invalid Value.
     else:
         print("Please Enter a Valid Option.")
     break
 
-
+#Checking if user want to Exit the program.
 input("Press Enter to EXIT.")
 
 
