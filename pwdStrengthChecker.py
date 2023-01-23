@@ -1,8 +1,3 @@
-"""
-This program contains a function check_password which takes
-a single argument and tells if the password is strong or not
-
-"""
 
 def check_password(password):
     # Check that the password is at least 8 character long.
